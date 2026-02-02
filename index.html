@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     
+    <title>Scuba Diving</title>
+</head>
+<body>
+  <div class="main">
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>SCUBA DIVING</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">About Us</a></li>
+                <li><a href="#" class="link">Packages</a></li>
+                <li><a href="#" class="link">Diving School</a></li>
+                <li><a href="#" class="link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+<!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+</div> 
+
+<!-------------------------------------- About Us Page -------------------------------------->
+
+  <section class="about-section">
+    <div class="about-content">
+      <img src="./images/logo.png" alt="Dive Icon" class="about-icon">
+      <h1>About ThaiDiving</h1>
+      <p>
+        Phuket is a great place to get acquainted with diving or go to conquer the deep sea, if you are already an experienced diver.
+        Our company has been working in Phuket for 10 years, and has gathered the best PADI instructors. We offer diving in Phuket
+        for certified divers of various levels - from freshly trained Open Water divers to experienced technical and cave divers.
+      </p>
+      <p>
+        If you have not already dived to Phuket, then our instructors will introduce you to all the underwater beauties and sights
+        of diving sites in Phuket.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+
+    <div class="service-card">
+      <img src="./images/aboutimg1.webp" alt="Diving School">
+      <h2>Diving School</h2>
+      <p>In our diving center in Phuket, professional PADI instructors work. After the course, you receive a certificate that gives you the right to visit sites according to your current level.</p>
+      <a href="#" class="btn">LEARN MORE</a>
+    </div>
+
+    <div class="service-card">
+      <img src="./images/aboutimg2.webp" alt="Diving Tours">
+      <h2>Diving Tours</h2>
+      <p>A great alternative to a beach lounger. You embark on an exciting adventure with experienced instructors who will help you dive safely and see the underwater world in all its diversity.</p>
+      <a href="#" class="btn">LEARN MORE</a>
+    </div>
+ 
+</section>
+
+
+
+<section class="instructors-section">
+    <div class="section-header">
+      <img src="./images/logo.png" alt="Scuba Icon" class="icon">
+      <h1>Our Instructors</h1>
+    </div>
+
+    <div class="instructors-container">
+      
+        <!-- Instructor 1 -->
+      <div class="instructor-card">
+        <img src="./images/Instructor1.webp" alt="Ali Meddan" class="profile-pic">
+        <h3 class="name yellow">Ali Meddan</h3>
+        <p>Ali started 10 years ago as an amateur, and simply fell in love with the underwater world. He went all the way and became a professional diving instructor at ThaiDiving.</p>
+      </div>
+
+      <!-- Instructor 2 -->
+      <div class="instructor-card">
+        <img src="./images/Instructor2.webp" alt="Joe Riverstone" class="profile-pic">
+        <h3 class="name yellow">Joe Riverstone</h3>
+        <p>Joe has extensive experience with both adults and children. He not only transfers his skills to divers but instills a love for the underwater world and its diverse inhabitants.</p>
+      </div>
+
+      <!-- Instructor 3 -->
+      <div class="instructor-card">
+        <img src="./images/Instructor3.webp" alt="Stacey Nicolson" class="profile-pic">
+        <h3 class="name yellow">Stacey Nicolson</h3>
+        <p>Stacey's track record has more than 200 dives and more than 50 students who have become professional divers. She loves the sea as much as teaching people to dive!</p>
+      </div>
+    
+    </div>
+  </section>
+
+
+  <!------------------------Packages  ----------------------->
+
+   <section class="explore-section">
+    <div class="explore-content">
+      <img src="./images/logo.png" alt="Dive Icon" class="explore-icon">
+      <h1>Explore Phuket</h1>
+      <p>
+        If you go on vacation to Phuket don't forget to save some time for scuba diving. The underwater world here is perfect both for amateurs and professional divers. Diving in Phuket and diving safaris on the Similan Islands are traditionally among the ten best places in the world for scuba diving. Phuket dive sites are famous for their variety of corals and an abundance of underwater fauna.
+      </p>
+    </div>
+  </section>
+
+ <section class="instructor-header">
+    <img src="./images/logo.png" alt="Instructor Icon" class="instructor-icon">
+    <h2>Diving Packages</h2>
+  </section>
+
+
+   <section class="packages-section">
+    <div class="package-card">
+      <img src="./images/firstpackage.webp" alt="3 Days - 9 Dives">
+      <h2>3 Days – 9 Dives</h2>
+      <h3>from $ 300</h3>
+      <p>Make the most of your diving experience in Phuket. We will go diving 3 times a day, 3 days in a row, in different nearby places.</p>
+      <a href="#" class="link">KNOW MORE</a>
+    </div>
+
+    <div class="package-card">
+      <img src="./images/secondpackage.webp" alt="Night Dives">
+      <h2>Night Dives</h2>
+      <h3>from $ 150</h3>
+      <p>Night diving is something you should try. The underwater world is spectacular at night! The offer is only for AOWD divers.</p>
+      <a href="#" class="link">KNOW MORE</a>
+    </div>
+
+    <div class="package-card">
+      <img src="./images/thirdpackage.webp" alt="3 Caves - 3 Days">
+      <h2>3 Caves – 3 Days</h2>
+      <h3>from $ 250</h3>
+      <p>For Advanced Divers Only. We go diving to undisclosed caves in the Phuket surroundings. One day – one cave!</p>
+      <a href="#" class="link">KNOW MORE</a>
+    </div>
+
+    <div class="action-button">
+      <a href="#" class="main-btn" >LET'S GO DIVING</a>
+    </div>
+  </section>
+
+
+<!-----------------------------Diving School-------------------------------->
+
+ <section class="course-section">
+    <div class="course-content">
+      <img src="./images/logo.png" alt="Diving Icon" class="course-icon">
+      <h1>Scuba Diving Course</h1>
+      <p>
+        If you have already tried scuba diving, and you liked it, and you want to know more, be more independent under the water and dive in the places for certified divers, then the Open Water Diver diving course in Phuket is where you need to start. The course is divided into several parts: theory, practice, and of course, diving itself. It's simple: you go through all these parts of training in parallel: theory and practice in the pool or shallow water, and then real dives in the sea. During the training, you will learn everything that a diver should know: how the equipment works and how to use it and take care of it; where and when you can dive and how to plan your dives, how to swim under the water. You will learn so much that every day will bring you more and more vivid impressions!
+      </p>
+    </div>
+  </section>
+
+  <!-----------certificate section------------->
+
+   <section class="certificates-section">
+    <div class="certificates-header">
+      <img src="./images/logo.png" alt="Diving Icon" class="cert-icon">
+      <h2>Certificates</h2>
+    </div>
+    <div class="certificates-gallery">
+      <img src="./images/certificate1.webp" alt="Francis Certificate">
+      <img src="./images/certificate2.webp" alt="Stanford Certificate">
+      <img src="./images/certificate3.webp" alt="Cliffview Certificate">
+      <img src="./images/certificate4.webp" alt="Jefferson Certificate">
+    </div>
+  </section>
+
+<!---------- Image Section 1  -------->
+
+<section class="snorkeling-section">
+    <div class="snorkeling-image-wrapper">
+      <img src="./images/certificateimg1.webp" alt="Snorkeling Person">
+    </div>
+  </section>
+
+  <!-- Course Details Section 1 -->
+
+   <section class="padi-course">
+    <div class="course-header">
+      <img src="./images/logo.png" alt="Scuba Icon" class="icon" />
+      <h1>PADI Open Water Course</h1>
+    </div>
+
+    <div class="course-content">
+      <div class="description">
+        <p>
+          A course for beginners with an international certificate. As part of the course, students are introduced to diving equipment, the basics of scuba diving, and various techniques. Upon successful completion of the course, a PADI Open Water Diver certificate is issued, which is recognized worldwide. To get it, you need to attend theoretical classes, make 1–2 dives in the pool with an instructor and 4 dives in open water (at sea), correctly complete the necessary actions and fill out the test exam.
+        </p>
+      </div>
+      <div class="details">
+        <ul>
+          <li>✔ Quantity of dives: 4+pool</li>
+          <li>✔ Approximate Duration: 3–4 days</li>
+          <li>✔ Prices starting from:<br>115.00 USD (Adult)<br>80.00 USD (Child)</li>
+          <li>✔ Minimum Age: 10 years old</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="course-features">
+      <div class="feature">
+        <img src="./images/finsicon.svg" alt="Fins Icon">
+        <p>Experienced instructors: Learn the basics of scuba diving from a friendly and highly qualified team of trainers.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/glassicon.svg" alt="Pool Icon">
+        <p>Practice: The course includes theoretical lessons and the implementation of mandatory exercises in the pool, plus 3–4 dives in the sea.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/occtopusicon.svg" alt="Octopus Icon">
+        <p>Diving from childhood: The course is available for kids from 10 y.o. For students aged 10 to 12 years, the maximum diving depth is 12m.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Image Section 2 -->
+
+ <section class="divers-section">
+    <div class="diver-image">
+      <img src="./images/certificateimg2.webp" alt="Diver Left">
+    </div>
+    <div class="diver-image">
+      <img src="./images/certificateimg2.1.webp" alt="Diver Right">
+    </div>
+  </section>
+
+
+  <!-- Course Details Section 2 -->
+    
+  
+  <section class="aowd-section">
+    <div class="icon-title">
+      <img src="./images/logo.png" alt="Scuba Icon" class="icon" />
+      <h1>PADI Advanced Open Water Diver (AOWD)</h1>
+    </div>
+
+    <div class="aowd-content">
+      <div class="aowd-left">
+        <p>
+          The PADI Advanced Open Water Diver course consists of 5 dives, two of which are mandatory – a deep sea dive (no deeper than 30m) and underwater navigation.
+          The remaining 3 dives are selected at the discretion of the student. It can be: AWARE fish identification, ship diving, towing dives, current diving, mastery of buoyancy,
+          night dive, multilevel dives and computer dives, search and recovery of sunken objects, underwater naturalist, underwater photography, wreck diving.
+        </p>
+      </div>
+      <div class="aowd-right">
+        <ul>
+          <li>✔   Quantity of dives: 5</li>
+          <li>✔ Approximate Duration: 2 days</li>
+          <li>✔ Prices starting from:<br>300.00 USD (Adult)<br>200.00 USD (Child)</li>
+          <li>✔ Minimum Age: 10 years old</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aowd-features">
+      <div class="feature">
+        <img src="./images/finsicon.svg" alt="Instructor Icon">
+        <p>Experienced instructors: Learn to be a confident scuba diver from a friendly and highly qualified team of trainers.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/glassicon.svg" alt="Pool Icon">
+        <p>Practice: The course includes 5 dives on different depth with implementation of exercises and exam passing.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/occtopusicon.svg" alt="Octopus Icon">
+        <p>Diving from childhood: the course is available for kids from 10 y.o. For students aged 10 to 12 years, the maximum diving depth is 12m.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!---------- Image Section 3 --------->
+
+
+<section class="snorkeling-section3">
+    <div class="snorkeling-image-wrapper3">
+      <img src="./images/certificateimg3.webp" alt="Snorkeling Person">
+    </div>
+  </section>
+
+
+
+   <!-- Course Details Section 3 -->
+    
+  
+  <section class="aowd-section3">
+    <div class="icon-title3">
+      <img src="./images/logo.png" alt="Scuba Icon" class="icon" />
+      <h1>PADI Divemaster Course</h1>
+    </div>
+
+    <div class="aowd-content3">
+      <div class="aowd-left3">
+        <p>
+          The PADI Divemaster course is the first professional level. The course consists of an extensive theoretical part, and also includes assistance to the instructor in the pool and in open water. To join the course, you need to have a PADI AOWD or equivalent certificate . Also you should have a PADI Rescue Diver certificate or equivalent, be at least 18 years old and have a good physical shape. The duration of this course depends on your previous experience as by the end of the course, you need to have at least 60 registered dives in open water.
+        </p>
+      </div>
+      <div class="aowd-right3">
+        <ul>
+          <li>✔   Quantity of dives: no less that 60</li>
+          <li>✔ Approximate Duration: 15 days</li>
+          <li>✔ Prices starting from:<br>1000.00 USD (Adult)<br>800.00 USD (Child)</li>
+          <li>✔ Minimum Age: 18 years old</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aowd-features3">
+      <div class="feature3">
+        <img src="./images/finsicon.svg" alt="Instructor Icon">
+        <p>Experienced instructors: learn to be a proficient scuba diver from a friendly and highly qualified team of trainers.</p>
+      </div>
+      <div class="feature3">
+        <img src="./images/glassicon.svg" alt="Pool Icon">
+        <p>Vast opportunities: this course is your first step to becoming a professional diver. You'll become a PADI member with all benefits.</p>
+      </div>
+      <div class="feature3">
+        <img src="./images/occtopusicon.svg" alt="Octopus Icon">
+        <p>Privileges: subscribe to the Undersea Journal, receive newsletters from the PADI head office and discounts on purchases.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!---------Contact Section ---------->
+
+  <section class="contact-section">
+    <div class="contact-left">
+      <img src="./images/logo.png" alt="Icon" class="contact-icon" />
+      <h1>Contacts</h1>
+      <p class="contact-description">
+        We recommend booking diving tours and courses in advance. Feel free to contact us for any personal inquiries:
+      </p>
+
+      <div class="contact-info">
+        <p><strong>Address</strong><br>
+        6/86 Moo 8, T. Vichit, A. Muang, Phuket, Thailand, 83000</p>
+
+        <p><strong>Hours</strong><br>
+        Monday - Saturday: 11 AM – 9 PM<br>
+        Sunday: 11 AM – 11 PM</p>
+
+        <p><strong>Contacts</strong><br>
+        +1 (234) 567 89 00<br>
+        thaidiving@email.com</p>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form class="contact-form">
+        <input type="text" placeholder="Name*" required />
+        <input type="text" placeholder="Phone number*" required />
+        <input type="email" placeholder="E-mail*" required />
+        <button type="submit">SEND A REQUEST</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-------------Footer Section-------------->
+
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        <img src="./images/logo.png" alt="Diving Mask">
+        <span>ThaiDiving</span>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Diving School</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="copyright">©Created by &nbsp; <b>All rights Reserved</b></p>
+    </div>
+  </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+
+<script>
+
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+
+</script>
+
+</body>
+</html>
